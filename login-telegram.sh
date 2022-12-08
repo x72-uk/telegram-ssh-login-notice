@@ -11,4 +11,4 @@ message="["$login_date"] "$'\n'" New login on: "$login_server" ("$login_server_f
 chat_id=<replace with chat id>
 telegram_bot_token=<replace with bot token>
 
-curl -s --data "text=$1" --data "chat_id=$chat_id" 'https://api.telegram.org/bot'$telegram_bot_token'/sendMessage' > /dev/null
+curl -s --data "text=$message" --data "chat_id=$chat_id" 'https://api.telegram.org/bot'$telegram_bot_token'/sendMessage' > /dev/null
